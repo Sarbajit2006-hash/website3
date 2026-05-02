@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hackathon Website</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+<!-- AOS Animation -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Loader -->
+<div id="loader">
+    <h1>Loading...</h1>
+</div>
+
+<!-- Cursor -->
+<div class="cursor"></div>
+
+<header class="navbar">
+    <h1 class="logo">MyWebsite</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#cards">Features</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <button id="themeToggle">🌙</button>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>SmartCity AI</h1>
+        <p>Future of Urban Intelligence 🚀</p>
+        <a href="#cards" class="btn">Explore Platform</a>
+    </div>
+</section>
+<section class="topics">
+
+    <h1 class="main-title">Smart City AI Platform</h1>
+    <p class="subtitle">AI-powered urban services & intelligent assistance</p>
+
+    <!-- Section 1 -->
+    <h2 class="section-title">1. City Services</h2>
+
+    <div class="card-box">
+        <div class="card-premium">
+            <h3>🚦 Traffic AI</h3>
+            <p>Real-time traffic updates with smart route suggestions.</p>
+            <span class="tag">REAL-TIME</span>
+            <span class="tag">AI NAVIGATION</span>
+        </div>
+
+        <div class="card-premium">
+            <h3>🏥 Smart Health</h3>
+            <p>Locate nearby hospitals and emergency services instantly.</p>
+            <span class="tag">EMERGENCY</span>
+            <span class="tag">LOCATION BASED</span>
+        </div>
+    </div>
+
+    <!-- Section 2 -->
+    <h2 class="section-title">2. Live Intelligence</h2>
+
+    <div class="card-box">
+        <div class="card-premium">
+            <h3>🌦️ Weather AI</h3>
+            <p>Live weather insights with AI-based predictions.</p>
+            <span class="tag">LIVE DATA</span>
+        </div>
+
+        <div class="card-premium">
+            <h3>🚌 Transport</h3>
+            <p>Smart public transport guidance system.</p>
+            <span class="tag">SMART MOBILITY</span>
+        </div>
+    </div>
+
+</section>
+<section id="cards" class="cards">
+
+<div class="card">
+    <h3>🚦 Traffic AI</h3>
+    <p>Real-time traffic updates and smart route suggestions.</p>
+</div>
+
+<div class="card">
+    <h3>🏥 Smart Health</h3>
+    <p>Find nearby hospitals and emergency services instantly.</p>
+</div>
+
+<div class="card">
+    <h3>🌦️ Weather AI</h3>
+    <p>Live weather updates and predictions.</p>
+</div>
+
+<div class="card">
+    <h3>🚌 Transport</h3>
+    <p>Bus, metro and travel assistance powered by AI.</p>
+</div>
+
+</section>
+<section class="dashboard">
+    <h2>City Live Dashboard</h2>
+
+    <div class="stats">
+        <div class="stat">🚗 Traffic: Moderate</div>
+        <div class="stat">🌡️ Temp: 32°C</div>
+        <div class="stat">💡 Power: Stable</div>
+        <div class="stat">🚓 Safety: Good</div>
+    </div>
+</section>
+<section class="dashboard">
+    <h2>City Analytics</h2>
+
+    <div class="bars">
+        <div class="bar"><span style="width: 70%"></span>Traffic</div>
+        <div class="bar"><span style="width: 50%"></span>Pollution</div>
+        <div class="bar"><span style="width: 80%"></span>Safety</div>
+        <div class="bar"><span style="width: 60%"></span>Energy</div>
+    </div>
+</section>
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form class="form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<section id="about" class="about" data-aos="fade-right">
+    <h2>About</h2>
+    <p>This project is built for smart city applications with advanced UI.</p>
+</section>
+
+<section id="contact" class="contact" data-aos="fade-left">
+    <h2>Contact</h2>
+    <p>Email: example@email.com</p>
+</section>
+
+<footer>
+    <p>© 2026 MyWebsite</p>
+</footer>
+
+<!-- AOS Script -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+<script>
+AOS.init();
+</script>
+<!-- Tilt JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+
+<script src="script.js"></script>
+<!-- AI Chat Button -->
+<div id="chatBtn">💬</div>
+
+<!-- Chat Box -->
+<div id="chatBox">
+    <div class="chat-header">AI Assistant</div>
+    <div class="chat-body" id="chatBody"></div>
+    <input type="text" id="userInput" placeholder="Ask something..." />
+</div>
+<div id="map" style="height: 300px; border-radius: 15px;"></div>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+<div id="weather">Loading weather...</div>
+<button onclick="startVoice()">🎤 Talk to AI</button>
+<script src="script.js"></script>
+<!-- your content above -->
+
+<script src="script.js"></script>
+<script>
+    alert("Hello");
+</script>
+<div id="map"></div>
+<div id="loader"></div>
+<div id="loader">Loading...</div>
+</body>
+</html>
